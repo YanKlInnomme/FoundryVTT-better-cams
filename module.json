@@ -1,0 +1,23 @@
+{
+  "id": "better-cams",
+  "title": "Better Cams",
+  "description": "A module to improve the visual design of webcams in Foundry VTT, providing a more modern and visually appealing appearance for player video feeds.",
+  "version": "1.0.0",
+  "license": "LICENSE",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12.327",
+    "maximum": "13"
+  },
+  "authors": [
+    {
+      "name": "YanK",
+      "url": "yank-solutions.fr",
+      "email": "yanklinnomme@gmail.com",
+      "discord": "yanklinnomme"
+    }
+  ],
+  "styles": [
+    "css/better-cams.css"
+  ]
+}
