@@ -17,6 +17,9 @@
       "discord": "yanklinnomme"
     }
   ],
+  "esmodules": [
+    "better-cams.js"
+  ],
   "styles": [
     "css/better-cams.css"
   ]

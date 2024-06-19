@@ -1,6 +1,6 @@
 div#camera-views {
 	--av-border-radius: 0;
-	--color-border-av-speaking: #fefefe;
+	--color-border-av-speaking: var(--color-shadow-highlight);
 	--av-minimized-icon-size: 75px;
 }
 

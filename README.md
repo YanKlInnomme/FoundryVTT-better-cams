@@ -4,17 +4,20 @@
 
 # Module better-cams pour Foundry VTT
 
-Ce module est une adaptation du jeu de rôle Apocalypse World pour Foundry VTT. Il fonctionne de paire avec le système Powered by the Apocalypse (Propulsé par l'Apocalypse) d'Asacolips.
+Le module améliore l'apparence visuelle des webcams dans Foundry VTT en utilisant des styles CSS personnalisés. Les modifications incluent la suppression des bordures arrondies, l'ajout de nouvelles ombres, des arrière-plans semi-transparents pour les noms des joueurs et des ajustements de la saturation des vidéos.
 
 Si vous appréciez le module et que vous avez les moyens de le faire, vous pouvez me soutenir en m'offrant un café sur Buy Me a Coffee (https://www.buymeacoffee.com/yank). Votre geste serait grandement apprécié et contribuerait à soutenir le développement continu. Quoi qu'il en soit, je vous souhaite une expérience enrichissante et divertissante. N'hésitez pas à me contacter pour partager vos commentaires ou signaler tout problème éventuel.
 
-## Prérequis
+## Version 1.0.0
+ - Création du module (sur une idée initialement intégrée dans le module [apocalyptice-world])
 
-Afin de fonctionner ce module nécessite l'installations préalable suivante :
- * Le système 'Powered by the Apocalypse' (pbta)
+---------------------------------------------------------------------
 
-De plus pour un usage multilingue, il est convient d'installer les modules suivants :
- * Le module Babele (L'indispensable pour faire de la traduction)
- * Le module Lib-wrapper (Requis par Babele)
+# Module better-cams for Foundry VTT
 
-## Licences
+The module enhances the visual appearance of webcams in Foundry VTT by using custom CSS styles. Changes include removing rounded borders, adding new shadows, semi-transparent backgrounds for player names, and video saturation adjustments.
+
+If you like the module and have the means to do so, you can support me by offering me a coffee on Buy Me a Coffee (https://www.buymeacoffee.com/yank). Your support would be greatly appreciated and will aid ongoing development. This will enable me to prepare additional ready-to-play scenarios for you. In any case, I hope you have a rewarding and enjoyable experience. Please feel free to contact me with any comments or issues.
+
+## Version 1.0.0
+ - Module creation (based on an idea initially integrated into the [apocalyptice-world] module)
