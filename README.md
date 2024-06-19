@@ -6,6 +6,8 @@
 
 Le module améliore l'apparence visuelle des webcams dans Foundry VTT en utilisant des styles CSS personnalisés. Les modifications incluent la suppression des bordures arrondies, l'ajout de nouvelles ombres, des arrière-plans semi-transparents pour les noms des joueurs et des ajustements de la saturation des vidéos.
 
+https://github.com/YanKlInnomme/FoundryVTT-better-cams/assets/100078854/333ea045-d266-431a-9bd2-cc08afba2551
+
 Si vous appréciez le module et que vous avez les moyens de le faire, vous pouvez me soutenir en m'offrant un café sur Buy Me a Coffee (https://www.buymeacoffee.com/yank). Votre geste serait grandement apprécié et contribuerait à soutenir le développement continu. Quoi qu'il en soit, je vous souhaite une expérience enrichissante et divertissante. N'hésitez pas à me contacter pour partager vos commentaires ou signaler tout problème éventuel.
 
 ## Version 1.0.0
