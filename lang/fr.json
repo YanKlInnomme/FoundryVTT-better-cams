@@ -1,0 +1,10 @@
+{
+  "BETTER_CAMS.Settings.IdleSaturation.Name": "Saturation des caméras au repos",
+  "BETTER_CAMS.Settings.IdleSaturation.Hint": "0 affiche les autres caméras en noir et blanc ; 1 conserve leurs couleurs normales.",
+  "BETTER_CAMS.Settings.SpeakingSaturation.Name": "Saturation de la personne qui parle",
+  "BETTER_CAMS.Settings.SpeakingSaturation.Hint": "1 conserve les couleurs normales ; une valeur supérieure renforce les couleurs.",
+  "BETTER_CAMS.Settings.SpeakingColor.Name": "Couleur du contour de prise de parole",
+  "BETTER_CAMS.Settings.SpeakingColor.Hint": "Couleur du contour affiché par Foundry autour de la personne qui parle.",
+  "BETTER_CAMS.Settings.TransitionDuration.Name": "Durée de la transition (ms)",
+  "BETTER_CAMS.Settings.TransitionDuration.Hint": "Durée du fondu entre l'état désaturé et l'état actif, en millisecondes."
+}

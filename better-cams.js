@@ -1,40 +1,53 @@
-Hooks.on("renderSettings", (app, html) => {
-  const links = {
-    git: {
-      title: "Module deposit",
-      url: "https://github.com/YanKlInnomme/FoundryVTT-better-cams",
-      iconClass: "fab fa-github"
-    },
-    donation: {
-      title: "Buy me a coffee",
-      url: "https://www.buymeacoffee.com/yank",
-      iconClass: "fa-regular fa-mug-hot fa-bounce"
-    }
+const MODULE_ID = "better-cams";
+
+/** Apply client-side settings without re-rendering the camera dock. */
+function applyAppearanceSettings() {
+  const root = document.documentElement;
+  root.style.setProperty("--better-cams-idle-saturation", game.settings.get(MODULE_ID, "idleSaturation"));
+  root.style.setProperty("--better-cams-speaking-saturation", game.settings.get(MODULE_ID, "speakingSaturation"));
+  root.style.setProperty("--better-cams-speaking-color", game.settings.get(MODULE_ID, "speakingColor"));
+  root.style.setProperty("--better-cams-transition-duration", `${game.settings.get(MODULE_ID, "transitionDuration")}ms`);
+}
+
+Hooks.once("init", () => {
+  const fields = foundry.data.fields;
+  const common = {
+    scope: "client",
+    config: true,
+    onChange: applyAppearanceSettings
   };
 
-  const createButton = (text, iconClass, url) => {
-    const button = $(`<button><i class="${iconClass}"></i> ${text}</button>`);
-    button.on("click", ev => {
-      ev.preventDefault();
-      window.open(url, "_blank");
-    });
-    return button;
-  };
+  game.settings.register(MODULE_ID, "idleSaturation", {
+    ...common,
+    name: "BETTER_CAMS.Settings.IdleSaturation.Name",
+    hint: "BETTER_CAMS.Settings.IdleSaturation.Hint",
+    type: new fields.NumberField({required: true, min: 0, max: 1, step: 0.05, initial: 0.4}),
+    default: 0.4
+  });
 
-  const addLinkButton = (container, link) => {
-    const button = createButton(link.title, link.iconClass, link.url);
-    container.append(button);
-  };
+  game.settings.register(MODULE_ID, "speakingSaturation", {
+    ...common,
+    name: "BETTER_CAMS.Settings.SpeakingSaturation.Name",
+    hint: "BETTER_CAMS.Settings.SpeakingSaturation.Hint",
+    type: new fields.NumberField({required: true, min: 0, max: 2, step: 0.05, initial: 1}),
+    default: 1
+  });
 
-  const title = "Better Cams · Links";
-  const lotdSection = $(`<h2>${title} <i class="fa-light fa-up-right-from-square"></i></h2>`);
-  html.find("#settings-game").after(lotdSection);
+  game.settings.register(MODULE_ID, "speakingColor", {
+    ...common,
+    name: "BETTER_CAMS.Settings.SpeakingColor.Name",
+    hint: "BETTER_CAMS.Settings.SpeakingColor.Hint",
+    type: new fields.ColorField({required: true, nullable: false, initial: "#ff6400"}),
+    default: "#ff6400"
+  });
 
-  const lotdDiv = $(`<div></div>`);
-  lotdSection.after(lotdDiv);
-
-  Object.values(links).forEach(link => {
-    addLinkButton(lotdDiv, link);
+  game.settings.register(MODULE_ID, "transitionDuration", {
+    ...common,
+    name: "BETTER_CAMS.Settings.TransitionDuration.Name",
+    hint: "BETTER_CAMS.Settings.TransitionDuration.Hint",
+    type: new fields.NumberField({required: true, min: 0, max: 2000, step: 50, initial: 250}),
+    default: 250
   });
 });
-//
+
+Hooks.once("ready", applyAppearanceSettings);

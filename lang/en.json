@@ -1,0 +1,10 @@
+{
+  "BETTER_CAMS.Settings.IdleSaturation.Name": "Idle camera saturation",
+  "BETTER_CAMS.Settings.IdleSaturation.Hint": "0 displays other cameras in black and white; 1 keeps their normal colours.",
+  "BETTER_CAMS.Settings.SpeakingSaturation.Name": "Active speaker saturation",
+  "BETTER_CAMS.Settings.SpeakingSaturation.Hint": "1 keeps normal colours; a higher value makes colours more vivid.",
+  "BETTER_CAMS.Settings.SpeakingColor.Name": "Active speaker border colour",
+  "BETTER_CAMS.Settings.SpeakingColor.Hint": "The border colour Foundry displays around the active speaker.",
+  "BETTER_CAMS.Settings.TransitionDuration.Name": "Transition duration (ms)",
+  "BETTER_CAMS.Settings.TransitionDuration.Hint": "Fade duration between the desaturated and active states, in milliseconds."
+}
