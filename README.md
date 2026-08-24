@@ -1,6 +1,8 @@
 ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FYanKlInnomme%2FFoundryVTT-better-cams%2Fmaster%2Fmodule.json&query=%24.compatibility.verified&label=foundry%20vtt&color=%23ee9b3a) ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FYanKlInnomme%2FFoundryVTT-better-cams%2Fmaster%2Fmodule.json&query=%24.version&label=version&color=%230f2f2b) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/YanKlInnomme/FoundryVTT-better-cams/total) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-raw/YanKlInnomme/FoundryVTT-better-cams) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-closed-raw/YanKlInnomme/FoundryVTT-better-cams) ![GitHub forks](https://img.shields.io/github/forks/YanKlInnomme/FoundryVTT-better-cams) ![GitHub Repo stars](https://img.shields.io/github/stars/YanKlInnomme/FoundryVTT-better-cams) <a href="https://www.buymeacoffee.com/yank">![Static Badge](https://img.shields.io/badge/buy_me_a_coffee-FFDD00?logo=Buy%20Me%20A%20Coffee&logoColor=black)</a>
 
-**See below for the English version**
+<img width="1919" height="1079" alt="Capture d&#39;écran 2026-08-24 142845" src="https://github.com/user-attachments/assets/6e2d7301-940d-4add-950e-95db3eda4411" />
+
+[**See below for the English version**](#Module-better-cams-for-Foundry-VTT)
 
 # Module better-cams pour Foundry VTT
 
